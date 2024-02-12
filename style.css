@@ -1,0 +1,169 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+   overflow:hidden;
+   background-color:#ffffff
+}
+
+.main{
+  height:100vh;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center
+}
+
+.calculator-box{
+  height:70%;
+  width:25%;
+  border:solid 1px black;
+  padding:5px;
+  border-radius:10px;
+  box-shadow:inset 0px 0px 10px black;
+  background-color:#ffffff;
+  
+}
+
+.display{
+  height:21%;
+  width:98%;
+  border:solid 1px white;
+  border-radius:10px;
+  background-color:white;
+  box-shadow:inset 0px 0px 6px black;
+  text-align:right;
+  font-size:40px;
+  
+
+
+}
+
+
+
+.cal-btn{
+  height:17%;
+  width:21%;
+  border-radius:15px;
+  font-size:20px;
+  border:solid 3px #e1dbdb;
+  box-shadow:0px 0px 7px #0d0d0d;
+  background-color:#ffffff;
+  color:black
+}
+
+.cal-btn:hover{
+  border:solid 2px black;
+}
+
+.oparator-btn{
+  background-color:#292929;
+  color:white
+}
+
+#ac-btn{
+  background-color:#ed1313;
+  color:white
+}
+
+#cut-btn{
+  background-color:#0b9c0b;
+  color:white;
+  font-size:35px
+
+}
+
+.oparator-btn:active{
+  background-color:#ffffff;
+  color:black
+
+}
+.cal-btn:active{
+
+  box-shadow:-3px -7px 1px  white;
+  background-color: #e0e0e0;
+  color:white
+}
+
+#equal-btn{
+  height:38%;
+  width:21%;
+  background-color:orange;
+  
+  
+}
+#equal-btn:active{
+  background-color:#ffe6ba
+}
+
+.oparator-btn{
+  background-color:#292929;
+  color:white
+}
+
+#ac-btn{
+  background-color:#ed1313;
+  color:white
+}
+
+#cut-btn{
+  background-color:#0b9c0b;
+  color:white;
+  font-size:35px
+
+}
+
+.cal-btn:active{
+
+  box-shadow:-3px -7px 1px  white;
+  background-color: #bab1b1;
+  color:white
+}
+
+.oparator-btn:active{
+  /*box-shadow:inset 0px 0px 7px  black;*/
+  background-color:#404040;
+  color:white
+
+}
+
+#ac-btn:active{
+  background-color:#ed7e7e;
+  color:white
+}
+
+#cut-btn:active{
+  background-color:#60ab60;
+  color:white;
+  font-size:35px
+
+}
+
+
+
+
+.top{
+  position:relative;
+  bottom:21%;
+  left:1%
+}
+
+.btn-box{
+  display:flex;
+  height:50vh;
+  gap:4%;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:10px
+}
+
+
+
+@media only screen and (max-width: 767px){
+  .calculator-box{
+    height:67%;
+    width:92%;
+  }
+}

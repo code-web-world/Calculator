@@ -37,11 +37,17 @@ for(let i=0; i<calBtn.length;i++){
   
   }
   
-  else if(this.value === '+' || this.value === '×' || this.value === '/'){
-    if(displayValue.value.slice(-1)==='+'||displayValue.value.slice(-1)==='-'||displayValue.value.slice(-1)==='×'||displayValue.value.slice(-1)==='/'){
-
-      displayValue.value =displayValue.value.slice(0,-1) + this.value
+  else if(this.value === '+' || this.value === '×' || this.value === '/'||this.value === '-'){
+    if(displayValue.value.slice(-1)==='+'||displayValue.value.slice(-1)==='×'||displayValue.value.slice(-1)==='/'){
+      if(this.value==='-'){
+        displayValue.value +=  this.value
+      }
     }
+
+  if(displayValue.value.slice(-1)==='+'||displayValue.value.slice(-1)==='×'||displayValue.value.slice(-1)==='/'||displayValue.value.slice(-1)==='-'){
+    
+      displayValue.value =displayValue.value.slice(0,-1) + this.value
+  }
 
     
   

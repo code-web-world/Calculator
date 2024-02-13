@@ -8,6 +8,11 @@ var displayValue = document.getElementById('display')
 for(let i=0; i<calBtn.length;i++){
   calBtn[i].addEventListener('click', function (){
 
+  if (this.value==='+'||this.value==='×'||this.value==='/'){
+      if(displayValue.value.slice(-1)==='-'){
+    displayValue.value = displayValue.value.slice(0,-1)
+  }}
+
   if (this.value === 'ac'){
     displayValue.value = ''
     
